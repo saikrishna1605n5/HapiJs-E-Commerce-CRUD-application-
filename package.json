@@ -1,7 +1,7 @@
 {
-  "name": "ionic-starter-api",
+  "name": "node-hapi-seed",
   "version": "0.0.1",
-  "description": "Api for ionic app",
+  "description": "Api for node server",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github-personal:rajeshwarpatlolla/ionic-starter-api.git"
+    "url": ""
   },
   "keywords": [
     "api"
@@ -18,18 +18,18 @@
   "author": "Rajeshwar Patlolla",
   "license": "ISC",
   "dependencies": {
-    "@hapi/boom": "^8.0.1",
-    "@hapi/good": "^8.2.4",
-    "@hapi/good-console": "^8.1.2",
-    "@hapi/good-squeeze": "^5.2.1",
-    "@hapi/hapi": "^18.4.0",
-    "@hapi/inert": "^5.2.2",
-    "@hapi/joi": "^15.1.1",
-    "@hapi/vision": "^5.5.4",
-    "bcrypt": "^3.0.6",
-    "hapi-swagger": "^10.2.0",
+    "@hapi/boom": "^9.1.0",
+    "@hapi/good": "^9.0.0",
+    "@hapi/good-console": "^9.0.0",
+    "@hapi/good-squeeze": "^6.0.0",
+    "@hapi/hapi": "^19.2.0",
+    "@hapi/inert": "^6.0.1",
+    "@hapi/joi": "^17.1.1",
+    "@hapi/vision": "^6.0.0",
+    "bcrypt": "^5.0.0",
+    "hapi-swagger": "^13.0.2",
     "jsonwebtoken": "^8.5.1",
     "lodash": "^4.17.19",
-    "mongoose": "^5.7.7"
+    "mongoose": "^5.9.26"
   }
 }
