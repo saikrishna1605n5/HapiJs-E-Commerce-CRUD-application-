@@ -8,7 +8,7 @@ const factory = require("./handlefactory");
 exports.getAllOrders = factory.getAll(OrderModel);
 
 
-exports.getOrder = factory.getOne(OrderModel,{path : 'products.productId'});
+exports.getOrder = factory.getOneWithPopulate(OrderModel,{path : 'products.productId'});
 
 
 
