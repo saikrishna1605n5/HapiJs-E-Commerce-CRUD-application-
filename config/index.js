@@ -4,8 +4,8 @@ module.exports = {
 		port: process.env.PORT,
 	},
 	swagger: {
-		contact: 'Rajeshwar Patlolla',
-		title: 'Ionic App API Documentation',
+		contact: 'sai krishna thatipamula',
+		title: 'API Documentation',
 	},
 	database: {
 		uri: process.env.MONGODB_URI,
