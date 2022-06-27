@@ -1,4 +1,6 @@
-var auth = require('./auth');
-var users = require('./users');
+const auth = require('./auth');
+const users = require('./users');
+const products = require('./productRoute');
+const orders = require("./orderRoute");
 
-module.exports = [].concat(auth, users);
+module.exports = [].concat(auth, users,products ,orders);

@@ -10,7 +10,7 @@ const Config = require('./config');
 const Routes = require('./routes');
 const Pack = require('./package');
 
-mongoose.connect(Config.database.uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true });
+mongoose.connect(Config.database.uri, { useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true ,useFindAndModify:false});
 
 let db = mongoose.connection;
 
