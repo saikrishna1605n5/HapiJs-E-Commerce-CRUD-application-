@@ -16,11 +16,13 @@ exports.getOrder = factory.getOneWithPopulate(OrderModel,{path : 'products.produ
 exports.createNewOrder = async (req, res)=> {
     try {
         const order = await OrderModel.create(req.payload);
-        const doc1 = await OrderModel.findById(order._id).populate("products.productId");
+        
+        const orderOfUser = JSON.parse(JSON.stringify(order));
+        
+        const doc1 = await OrderModel.findById(orderOfUser._id).populate("products.productId");
 
         const subtotal = doc1.products.reduce((r, d) => r + ((d.productId.price)*(d.quantity)), 0);
-        const orderOfUser = JSON.parse(JSON.stringify(doc1));
-    
+        
         const doc =  await OrderModel.findByIdAndUpdate(orderOfUser._id,
             { $set: { "subTotal": subtotal }},
             {
